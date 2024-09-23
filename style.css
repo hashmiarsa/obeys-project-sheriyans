@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+   
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#loader{
+    height: 100%;
+    width: 100%;
+    background-color: #0B0B0B;
+    position: fixed;
+    z-index: 999;
+    padding: 25vh 10vw;
+}
+
+.line{
+    /* background-color: red; */
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    gap: 5vw;
+
+}
+
+#line1-part1{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    /* font-size: 4.2vw; */
+    gap: 2vw;
+    font-family:"Silk Serif";
+    /* height: 100%; */
+
+
+}
+
+#line1-part1 h5{
+    font-weight: 100;
+    font-size: 4.2vw;
+    width: 5vw;
+    text-align: right;
+
+    /* margin-top: 9px; */
+}
+#line1-part1 h6{
+    font-weight: 100;
+    font-size: 4.2vw;
+
+    /* margin-top: 9px; */
+}
+
+.line h1{
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: "Plain light";
+}
+.line h2{
+    font-size: 6.3vw;
+    /* font-family: "plain light"; */
+    font-weight: 500;
+    /* animation-name: anime;
+     */
+     opacity: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime{
+    0%{
+        font-family: "plain light";
+        -webkit-text-stroke: 0.1px white;
+        opacity: 1;
+        color: white;
+        font-weight: 500;
+    }
+    47%{
+        font-family: "plain light";
+        -webkit-text-stroke: 0.1px white;
+        opacity: 0;
+        color: white;
+        font-weight: 500;
+    }
+    50%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px white;
+        opacity: 1;
+        color: transparent  ;
+        font-weight: 500;
+    }
+
+    100%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1cqh white;
+        opacity: 0;
+        color: transparent;
+        font-weight: 500;
+    }
+}
+
+
+#main{
+    position: relative;
+    background-color: #0B0B0B;
+
+
+}
+
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #151515;
+
+
+}
